@@ -13,6 +13,7 @@ img.src="Images\\image1.jpg";
 
 
 function resize(img){
+    //On change les dimensions de l'image
     img.width = 450; // Set new width
     img.height = 450;  // Set new height
 };
@@ -39,16 +40,17 @@ function start(){
 
     var i=0;
     for(var y=0;y<rows;y++){
-    for(var x=0;x<cols;x++){
-    var p=pieces[i++];
-  ctx.drawImage(
-    img,
-    // take the next x,y piece
-    x*pieceWidth, y*pieceHeight, pieceWidth, pieceHeight,
-    // draw it on canvas based on the shuffled pieces[] array
-    p.col*pieceWidth, p.row*pieceHeight, pieceWidth, pieceHeight
-  );
-}}
+        for(var x=0;x<cols;x++){
+            var p=pieces[i++];
+            ctx.drawImage(
+            img,
+            // take the next x,y piece
+            x*pieceWidth, y*pieceHeight, pieceWidth, pieceHeight,
+            // draw it on canvas based on the shuffled pieces[] array
+            p.col*pieceWidth, p.row*pieceHeight, pieceWidth, pieceHeight
+          );
+        }
+    }
 
 
 }
