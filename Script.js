@@ -11,9 +11,6 @@ resize(img);
 img.onload=start;
 img.src="Images\\turtle.jpg";
 
-var blank = new Image();
-blank.onload=start;
-blank.src="Image\\blank.jpg"
 
 
 function resize(img){
@@ -47,11 +44,8 @@ function start(){
         for(var x=0;x<cols;x++){
             var p=pieces[i++];
             if(i == 9){
-                ctx.drawImage(blank,
-                x*pieceWidth, y*pieceHeight, pieceWidth, pieceHeight,
-                p.col*pieceWidth, p.row*pieceHeight, pieceWidth, pieceHeight
-                );
-
+                ctx.fillStyle="rgba(255, 255, 255, 128)";
+                ctx.fillRect(p.col*pieceWidth, p.row*pieceHeight, pieceWidth, pieceHeight);
             }else{
                 ctx.drawImage(
                 img,
