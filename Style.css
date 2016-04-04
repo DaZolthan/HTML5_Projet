@@ -1,5 +1,5 @@
 body{
-   background-color: beige;
+   background-color: bisque;
     text-align: center;
 }
 
@@ -31,8 +31,10 @@ h2{
     text-align: justify;
     color : black;
     font-family: Verdana;
-    border : solid black 1px;
+    border : solid black 2px;
     padding : 10px;
+    border-radius: 12px;
+    background-color: beige;
 
 }
 

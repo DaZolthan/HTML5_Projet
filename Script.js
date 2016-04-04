@@ -47,8 +47,10 @@ function start(){
         for(var x=0;x<cols;x++){
             var p=pieces[i++];
             if(i == 9){
-                ctx.drawImage(blank,x*pieceWidth, y*pieceHeight, pieceWidth, pieceHeight,
-                p.col*pieceWidth, p.row*pieceHeight, pieceWidth, pieceHeight);
+                ctx.drawImage(blank,
+                x*pieceWidth, y*pieceHeight, pieceWidth, pieceHeight,
+                p.col*pieceWidth, p.row*pieceHeight, pieceWidth, pieceHeight
+                );
 
             }else{
                 ctx.drawImage(
