@@ -1,12 +1,18 @@
 body{
    background-color: darkgrey;
-    text-align: center;
+   text-align: center;
+    margin: 0px;
+}
+
+.titre{
+    background-image: linear-gradient(black,#222);
+    padding: 3px;
 }
 
 h2{
     font-family: Verdana;
     font-weight: bolder;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -48,4 +54,8 @@ a{
 
 #launchGame{
     font-size: 18px;
+}
+
+#canvasContainer{
+    border: solid black 1px;
 }
