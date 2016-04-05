@@ -9,7 +9,7 @@ var cols = 3;
 var img=new Image();
 resize(img);
 img.onload=start;
-img.src="Images\\turtle.jpg";
+img.src="Images\\image2.jpg";
 
 
 
