@@ -235,3 +235,12 @@ function victoryCheck(){
     }
 }
 
+function restart(){
+    shuffleList(casesList);
+    //On mélange les positions des cases.
+    display();
+    //On affiche les cases.
+    victoryCheck();
+    //On vérifie si les cases sont toutes à la bonne place (cas rare, mais ça peut arriver)
+}
+
