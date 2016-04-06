@@ -59,3 +59,9 @@ a{
 #canvasContainer{
     border: solid black 1px;
 }
+
+#video1{
+    text-align: center;
+    width : 683 ;
+    height : 383;
+}
